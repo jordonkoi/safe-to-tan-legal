@@ -12,43 +12,55 @@
     }
 
     body {
-      min-height: 100vh;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(
-        135deg,
-        #dfeeff 0%,
-        #f3efe9 50%,
-        #fff6e8 100%
-      );
-      color: #111;
-    }
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    #eaf6ff 0%,
+    #eaf6ff 78%,
+    #f6f1ea 92%,
+    #fff6e8 100%
+  );
+}
 
-    .page {
-      width: 100%;
-      max-width: 420px;
-      padding: 24px;
-      text-align: center;
-    }
+.page {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  text-align: center;
+  transform: translateY(-80px);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 180px;
+}
 
     /* Logo placeholder */
     .logo {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 24px;
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: rgba(0, 0, 0, 0.35);
-      letter-spacing: 0.5px;
-    }
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    .glass-card {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
     /* Glass card */
     .glass-card {
@@ -118,12 +130,13 @@
 </head>
 
 <body>
-  <div class="page">
+  <div class="hero">
+    <div class="page">  
 
     <!-- Replace with logo image later -->
     <div class="logo">
-      LOGO
-    </div>
+      <img src="logo.png" alt="Safe To Tan logo" />
+    </div>    
 
     <div class="glass-card">
       <p>Legal information for the Safe To Tan app</p>
@@ -143,5 +156,8 @@
     </footer>
 
   </div>
+</div>
+</div>
+
 </body>
 </html>
