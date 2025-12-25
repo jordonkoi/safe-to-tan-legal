@@ -6,6 +6,7 @@
   <title>Safe To Tan – Legal</title>
 
   <style>
+
     * {
       box-sizing: border-box;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -121,11 +122,61 @@
       opacity: 0.5;
     }
 
-    @media (max-width: 360px) {
-      .button-row {
-        flex-direction: column;
-      }
-    }
+    /* ================================
+   MOBILE FIXED SCREEN (NO SCROLL)
+   ================================ */
+@media (max-width: 768px) {
+
+/* Lock the viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Main wrapper fills screen exactly */
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+
+/* Logo sizing */
+.logo {
+  width: 170px;
+  max-width: 80%;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+/* Card must NOT flex-grow */
+.glass-card {
+  width: calc(100% - 32px);
+  max-width: 420px;
+  margin-top: 8px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+/* Remove footer completely on mobile */
+footer {
+  display: none;
+}
+}
+
   </style>
 </head>
 
@@ -147,7 +198,7 @@
       </div>
 
       <div class="contact">
-        Contact: <a href="mailto:koiventures@gmail.com">koiventures@gmail.com</a>
+        Contact: <a href="mailto:safetotan@gmail.com">safetotan@gmail.com</a>
       </div>
     </div>
 
